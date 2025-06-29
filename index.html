@@ -128,14 +128,8 @@
     });
 
     document.getElementById('okBtn').addEventListener('click', () => {
-      const cardPositions = Array.from(cards).map(card => ({
-        id: card.id.replace('card', ''),
-        x: card.getBoundingClientRect().left
-      }));
-
-      cardPositions.sort((a, b) => a.x - b.x);
-      const result = cardPositions.map(c => c.id).join('');
-      alert(`Порядок: ${result}`);
+      // Просто сообщение без показа порядка
+      alert("Спасибо! Новая очередность карт зафиксирована!");
     });
   </script>
 
